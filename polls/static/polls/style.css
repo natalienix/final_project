@@ -1,0 +1,17 @@
+li a {
+    color: blue;
+}
+
+a:hover {
+	size: 300%;
+	font-weight: bolder;
+	color: white;
+}
+
+
+body {
+    background: white url("images/dog.jpg"); 
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
