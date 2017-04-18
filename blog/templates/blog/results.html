@@ -1,6 +1,6 @@
 {% load staticfiles %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
 
 <h1>{{ question.question_text }}</h1>
 
@@ -10,6 +10,6 @@
 {% endfor %}
 </ul>
 
-<a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+<a href="{% url 'blog:detail' question.id %}">Vote again?</a>
 <p> </p>
-<a href="{% url 'polls:index' %}">Vote for another question?</a>
+<a href="{% url 'blog:index' %}">Vote for another question?</a>
