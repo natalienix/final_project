@@ -10,4 +10,8 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
+    
+    <li><a href="{% url 'index' %}">{{"How was your experience?"}}</a></li>
+        <p>No questions are available.</p>
+
 {% endblock content %}
