@@ -1,7 +1,3 @@
-li a {
-    color: blue;
-}
-
 a:hover {
 	size: 300%;
 	font-weight: bolder;
@@ -14,6 +10,7 @@ h1{
 	text-align: center;
 }
 
+
 body {
     background: white url("images/dog.jpg"); 
     background-attachment: fixed;
@@ -21,19 +18,43 @@ body {
 	background-size: cover;
 }
 
+p{
+    color: black;
+    letter-spacing: 1px;
+	text-align: left;
+	word-wrap: break-word;
+	max-width: 90vw;
+}
+
 
 .post{
-	background-color: white;
-
+	background-color: #D8D8D8;
+	font-family: 'helvetica neue', helvetica, sans-serif; 
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 10px 10px;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	width:-moz-max-content;
+	width: -webkit-fit-content;
 }
+
 .page-header {
     background-color: midnightblue;
     margin-top: 0;
     padding: 20px 20px 20px 20px;
 }
 
-.page-header h2, .page-header h2 a, .page-header h2 a:visited, .page-header h2 a:active {
-    color: #ffffff;
+.glyphicon:hover{
+    font-size: 125%;
+	font-weight: bolder;
+	color: #819FF7;
+}
+
+.page-header h2, .page-header h2 a, .page-header h2 a:visited, .page-header h2 a:active, h2 .page-header:hover a:hover{
+    color: red;
     font-size: 36pt;
     text-decoration: none;
 }
@@ -44,7 +65,7 @@ body {
 
 
 .date {
-    color: #828282;
+    color: #424242;
 }
 
 .save {
@@ -64,5 +85,8 @@ body {
 
 .post {
     margin-bottom: 70px;
+}
+.btn{
+    float: right;
 }
 
