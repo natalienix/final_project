@@ -1,15 +1,16 @@
-{% load staticfiles %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
-
-<h1>{{ question.question_text }}</h1>
-
-<ul>
-{% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-{% endfor %}
-</ul>
-
-<a href="{% url 'detail' question.id %}">Vote again?</a>
-<p> </p>
-<a href="{% url 'index' %}">Vote for another question?</a>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="post">
+        <h1>{{ question.question_text }}</h1>
+        
+        <ul>
+        {% for choice in question.choice_set.all %}
+            <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+        {% endfor %}
+        </ul>
+        
+        <a href="{% url 'detail' question.id %}">Vote again?</a>
+        <p> </p>
+        <a href="{% url 'index' %}">Vote for another question?</a>
+    </div>
+{% endblock %}
