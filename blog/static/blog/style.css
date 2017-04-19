@@ -90,3 +90,14 @@ p{
     float: right;
 }
 
+.page-footer{
+	float:right;
+	background-color: midnightblue;
+    margin-bottom: 0;
+    padding: 20px 20px 20px 20px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    
+}
+
