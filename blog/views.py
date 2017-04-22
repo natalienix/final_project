@@ -6,10 +6,10 @@ from .forms import PostForm
 from .models import Choice, Question, Post
 
 # Create your views here. Making sure it worked
-def index(request):
+def feedback(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     context = {'latest_question_list': latest_question_list}
-    return render(request, 'blog/index.html', context)
+    return render(request, 'blog/feedback.html', context)
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
