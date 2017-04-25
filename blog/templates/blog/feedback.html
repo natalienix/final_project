@@ -1,6 +1,5 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    
     {% if latest_question_list %}
         <div class="post">
             <h1>Questionaire:</h1>
@@ -11,7 +10,7 @@
         </ul>
         </div>
     {% else %}
-        <p>No blog are available.</p>
+        <p>No questions are available.</p>
     {% endif %}
 {% endblock %}
 
