@@ -1,5 +1,4 @@
 a:hover {
-	size: 300%;
 	font-weight: bolder;
 	color: white;
 }
@@ -38,7 +37,7 @@ p{
 	border-width: 2px;
 	border-style: solid;
 	width:-moz-max-content;
-	width: -webkit-fit-content;
+	width:-webkit-fit-content;
 }
 
 .page-header {
